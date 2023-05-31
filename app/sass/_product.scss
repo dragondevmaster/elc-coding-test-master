@@ -1,0 +1,41 @@
+/**
+ * This is the product css
+ *
+ */
+
+.product {
+  &-container {
+    padding-top: 24px;
+  }
+  .name {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  &-empty {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &-list {
+    display: flex;
+    overflow: auto;
+  }
+  &-count {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  &-error {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+  & + .product {
+    margin-left: 32px;
+  }
+}
